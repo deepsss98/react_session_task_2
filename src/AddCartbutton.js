@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function Add_to_Cart_Button({ cart_value, setCartValue }) {
+export function AddCartbutton({ cart_value, setCartValue }) {
   
   const [Add_to_cart_class, setAdd_to_cart_class] = useState("btn btn-outline-dark mt-auto");
   const [Remove_Item, setRemove_Item] = useState(false);

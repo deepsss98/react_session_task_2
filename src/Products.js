@@ -1,5 +1,5 @@
-import { Add_to_Cart_Button } from "./Add_to_Cart_Button";
-import { View_Options_Button } from "./View_Options_Button";
+import { AddCartbutton } from "./AddCartbutton";
+import { ViewOptionsButton } from "./ViewOptionsButton";
 
 export function Products({ data, cart_value, setCartValue }) {
   const sale_badge_style = { top: "0.5rem", right: "0.5rem" };
@@ -48,12 +48,12 @@ export function Products({ data, cart_value, setCartValue }) {
         </div>
         <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
           {data.button_name === "Add to cart" ? (
-            <Add_to_Cart_Button
+            <AddCartbutton
               cart_value={cart_value}
               setCartValue={setCartValue}
             />
           ) : (
-            <View_Options_Button/>
+            <ViewOptionsButton/>
           )}
         </div>
       </div>
